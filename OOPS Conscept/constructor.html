@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>
+        Constructor
+    </h1>
+    <script>
+
+        class car{
+            
+            constructor(name,price){
+                this.name=name;
+                this.price=price;
+            }
+
+            color(color){
+                this.color=color;
+            }
+        }
+        let c=new car("marithi",50000)
+        //c.name="maruthi";
+        //c.price=50000;
+        console.log(c)
+        
+        let a=c.color("blue");
+        console.log(a)
+    </script>
+</body>
+</html>

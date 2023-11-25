@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableform</title>
+    <style>
+        div{
+            color: black;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+            width: 800px;
+            padding: 20px;
+            margin-top: 100px;
+            border:2px solid rgb(128, 4, 150);
+            border-radius:10px;
+            
+
+        }
+        label{
+            width:100px;
+            display:inline-block;
+            
+        }
+        h1,h3{
+            color: rgb(6, 1, 1);
+            text-align: center;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div>
+
+        <form>
+            <h1>
+                Online job registration portal
+            </h1>
+            <h3>Register yourself to get a new job updates</h3>
+<hr>
+<br>
+            <table>
+                <tr>
+                    <th>Full Name</th>
+                    <!-- <th><label for="">First Name</label></th> -->
+                     <td><input type="text" placeholder="First name"></td>
+    
+    
+    <!-- <th><label for="">Last Name</label></th> -->
+    <td><input type="text" placeholder="Last name"></td>
+    
+</tr>
+
+<tr>
+    <th><label for="">Address</label></th>
+    <td colspan="30"><textarea name="" id="" cols="45" rows="1" maxlength="25" placeholder="Address"></textarea></td>
+</tr>
+<tr>
+    <td> </td>
+    <td colspan="30"><textarea name="" id="" cols="45" rows="1" maxlength="25" placeholder="Address"></textarea></td>
+    
+</tr>
+
+
+<tr>
+    <td> </td>
+    <td><input type="text" placeholder="City"></td>
+    <td><input type="text" placeholder="state"></td>
+</tr>
+<tr>
+    <td> </td>
+    <td><input type="text" placeholder="Pincode"></td>
+
+    <td><label for="">Country</label>
+    <select name="" id="">
+        <option>select one</option>
+        <option>India</option>
+    </select></td>
+</tr>
+
+
+
+
+
+
+<tr>
+    <th><label for="">Mobile</label></th>
+    <td><input type="text" maxlength="10" required placeholder="mobile"></td>
+</tr>
+<tr>
+    <th><label for="">email</label></th>
+    <td><input type="email" required placeholder="ex:myemail@example.com"></td>
+
+</tr>
+<tr>
+    <th><label for="">Skill level</label></th>
+    <td><select name="" id="">
+        <option>Undergraduate</option>
+        <option>graduate</option>
+        <option>post-graduate</option>
+        <option>Dipoma/technical</option>
+    </select></td>
+</tr>
+<tr>
+   <th> <label for="">Cover letter</label> </th>
+   <td colspan="60"><textarea maxlength="450" name="" id="" cols="45" rows="3" placeholder="Describe yourself in brief(max-450 character)"></textarea></td>
+</tr>
+
+<tr>
+    <th colspan="30"><label for="">Resume</label></th>
+    <td><input type="file"></td>
+</tr>
+
+
+<tr>
+    <th><label for="">Declaration</label></th>
+    <td colspan="70"><input type="checkbox">The above information is filled by me is true.I also accept all the terms and conditions</td>
+</tr>
+
+<tr class="button">
+    <td colspan=""><input type="button" value="Submit"></td>
+    <td><input type="button" value="Reset"></td>
+    
+</tr>
+
+
+
+</table>
+</form>
+</div>
+</body>
+</html>

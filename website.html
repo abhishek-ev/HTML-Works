@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+
+    }
+
+    nav {
+        height: 120px;
+        padding: 0px 120px;
+        background-color: #beef00;
+        border: 5px solid white;
+        border-bottom-color: #1400c6;
+
+    }
+
+    nav .logo .head {
+        font-size: 40px;
+        font-weight: bold;
+        float: left;
+        color: rgb(0, 0, 0);
+        letter-spacing: 1.5rem;
+        cursor: pointer;
+        margin-top: 12px;
+
+    }
+
+
+    nav ul {
+        float: right;
+        margin-top: 80px;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav li a {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 0px 30px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 1px solid #1400c6;
+        background-color: #9f84dd;
+        border-radius: 5px;
+    }
+
+    nav li a:hover {
+        color: #657a00;
+        transition: all 0.4s ease 0s;
+    }
+
+    .content img {
+        margin-top: 20px;
+        width: 1300px;
+        height: 250px;
+        border: 7px solid #1400c6;
+        margin-left: 300px;
+
+    }
+
+    .grid {
+        display: grid;
+        width: 1300px;
+        height: auto;
+        margin: auto;
+        grid-template-columns: 2.5fr 1fr;
+        grid-gap: 10px;
+        margin-top: 10px;
+    }
+
+    .grid .demo1 {
+
+        padding: 10px;
+        height: auto;
+        background-color: #9f84dd;
+    }
+
+    .demo2 {
+        height: auto;
+        padding: 10px;
+        background-color: #9f84dd;
+
+    }
+
+
+    .grid .demo2 .demo22 {
+        border: 3PX solid ;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .grid .demo2 .demo24 {
+        border: 3PX solid #1400c6;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        margin-bottom: 10px; 
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+      
+
+    }
+    form input{
+        border: 2px solid #1400c6;
+        border-radius: 10px;
+        height: 30px;
+        width: 200px;
+        text-align: center;
+  
+    }
+    form button{
+        color: white;
+        background-color: rgb(28, 26, 26);
+        height:30px;
+        border: 2px solid #1400c6;
+        border-radius: 10px;
+        width: 70px;
+        text-align: center;
+    }
+    .grid .demo2 .demo23 {
+        border: 3PX solid #1400c6;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        margin-bottom: 10px;
+       
+    }
+    .grid .demo2 .demo23 ul{
+       margin-left: 30px;
+      
+    }
+    .grid .demo2 .demo23 ul a{
+        font-size: 18px;
+        color: rgb(5, 31, 77);    
+    }
+    .grid .demo2 .demo23 ul li{
+        color: rgb(62, 58, 57);
+    }
+    .grid .demo2 .demo22 a{
+        font-size: 18px;
+        color: rgb(91, 84, 90);    
+    }
+    .grid .demo1 ul{
+       margin-right: 300px;
+       
+       
+     }
+     
+     .grid .demo1 ul li{
+         color: rgb(240, 33, 11);
+         
+     }
+     .grid .demo1 ul li span{
+        color: rgb(26, 23, 23);
+        
+    }
+    footer{
+ text-align: center;
+ font-size: 25px;
+  padding: 3px;
+  background-color: #beef00;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+  height: 100px;
+  border: 5px solid white;
+  border-top-color: #1400c6;
+  
+    }
+    /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+</style>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <p class="head">M4MUSIC</p>
+
+            </div>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <img src="https://i.gifer.com/D6XS.gif" alt="error">
+        </div>
+    </header>
+
+
+        <div class="grid">
+            <div class="demo1">
+                <h1>Welcome to the Website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente at soluta quos error nostrum. Odit
+                    dolorum temporibus iste, possimus corporis repudiandae voluptatum voluptas animi hic eius? Earum
+                    praesentium iusto nam fugiat, non fugit neque, aspernatur laudantium, excepturi labore et enim! Esse
+                    officia nemo necessitatibus earum dolorem dolores eveniet ducimus, eius tenetur ea, mollitia velit
+                    nam iure hic optio alias repellendus rerum voluptas consequatur. Corrupti architecto ipsam nesciunt,
+                    dicta beatae quia vel, temporibus odit velit, maxime quaerat. Aspernatur ratione distinctio vero
+                    rerum doloribus maxime aliquid quibusdam. Voluptatibus, ut nesciunt molestias quas ad magni optio
+                    voluptas aliquid nulla fuga! Totam, modi iste soluta laudantium, possimus asperiores enim, vel
+                    labore praesentium obcaecati maiores blanditiis pariatur velit facilis amet iure cumque tempora
+                    laborum qui deserunt commodi. Sit, repudiandae nemo sapiente quod ducimus ea pariatur, quas
+                    voluptatum mollitia obcaecati reprehenderit neque consequuntur aliquam maiores officia unde quisquam
+                    placeat, eveniet quidem suscipit minus enim ipsum ipsam? Autem deserunt atque perferendis architecto
+                    odio quam corrupti iusto et error illum. Dolore impedit est rerum in vero rem architecto suscipit
+                    quod explicabo, harum itaque doloribus laborum consequatur sit incidunt voluptates dolorum culpa
+                    sapiente labore earum illum saepe qui? A nihil ipsam dolorum. Sit, adipisci nesciunt ipsam totam
+                    explicabo beatae non corrupti! Dolore officia ea cupiditate quidem repellat quod mollitia, commodi
+                    nesciunt sapiente voluptate! Asperiores, nisi corrupti magni dolore provident aliquid vel illo quae
+                    iste ab amet commodi quod quis rerum ipsam harum quos? Atque ipsam odit laudantium laboriosam
+                    architecto soluta blanditiis omnis odio dolorem sequi, dolorum voluptatem neque culpa autem suscipit
+                    vel tenetur illo maxime quod aliquid voluptas quo totam. Reprehenderit, eos soluta. Culpa ea
+                    perferendis beatae corporis ipsum ipsam temporibus maxime eveniet, quas maiores nisi quisquam,
+                    suscipit aliquid atque pariatur id molestias nemo distinctio. Rem possimus a harum, ipsa ab sapiente
+                    sint provident eligendi, delectus illo velit natus eum accusamus optio iste inventore deserunt
+                    !</p>
+                    <h1>Some text are here</h1>
+                    <form>
+                        <ul>
+                            <li><span> ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo.</span></li>
+                            <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo.</span></li>
+                            <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo.</span></li>
+                            <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo.</span></li>
+                            <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo.</span></li>
+
+                        </ul>
+                    </form>
+            </div>
+            <div class="demo2">
+                <div class="demo22">
+                    <h1>Latest news</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quidem! Cum odio dignissimos
+                        delectus eius reiciendis amet eum nesciunt autem a non maiores animi suscipit nobis vitae quas
+                        corrupti molestias dicta, officiis dolores. Tenetur perspiciatis a eligendi! Saepe similique
+                        quas, voluptatem sit exercitationem quia debitis fugiat, iste, distinctio ipsum id suscipit
+                        deleniti ab sapiente quaantium.</p>
+                        <a href="#">readmore...</a>
+                </div>
+                <div class="demo23">
+                    <h1>Use Full Links</h1>
+                    <ul>
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li><a href="#">Link4</a></li>
+                        <li><a href="#">Link5</a></li>
+                    </ul>
+                </div>
+                <div class="demo24">
+                    <h2>Search</h2>
+                    <form>
+                    <input type="text" placeholder="Search here..">
+                    <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p>Author: Abu Publications<br>
+            <a href="#">abu@gm.com</a></p>
+            
+          </footer>
+
+
+</body>
+
+</html>
